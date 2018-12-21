@@ -7,10 +7,10 @@ import { Input, Output, Component, EventEmitter } from "@angular/core";
     <div class="votingWidgetContainer pointable" (click)="onClick()">
       <div class="well votingWidget">
         <div class="votingButton">
-          <i class="glyphicon glyphicon-heart" [style.color]="iconColor"></i>
+          <i class="glyphicon glyphicon-heart" [style.color]="iconColor">heart</i>
         </div>
         <div class="badge badge-inverse votingCount">
-          <div>{{count}}</div>
+          <div>votes: {{count}}</div>
         </div>
       </div>
     </div>
