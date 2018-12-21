@@ -7,7 +7,7 @@ import { Input, Output, Component, EventEmitter } from "@angular/core";
     <div class="votingWidgetContainer pointable" (click)="onClick()">
       <div class="well votingWidget">
         <div class="votingButton">
-          <i class="glyphicon glyphicon-heart" [style.color]="iconColor">heart</i>
+          <i class="glyphicon glyphicon-heart" [style.color]="iconColor"></i>
         </div>
         <div class="badge badge-inverse votingCount">
           <div>votes: {{count}}</div>
