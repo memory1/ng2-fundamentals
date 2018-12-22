@@ -10,7 +10,7 @@ import { Input, Output, Component, EventEmitter } from "@angular/core";
           <i class="glyphicon glyphicon-heart" [style.color]="iconColor"></i>
         </div>
         <div class="badge badge-inverse votingCount">
-          <div>votes: {{count}}</div>
+          <div>{{count}}</div>
         </div>
       </div>
     </div>
