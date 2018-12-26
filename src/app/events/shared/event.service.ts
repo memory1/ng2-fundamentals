@@ -11,13 +11,15 @@ export class EventService {
 
   }
   getEvents():Observable<IEvent[]> {
-    return this.http.get<IEvent[]>('/api/events')
-      .pipe(catchError(this.handleError<IEvent[]>('getEvents',[])))
+    console.log("event service");
+    return this.http.get<IEvent[]>("/api/events")
+    .pipe(catchError(this.handleError<IEvent[]>('getEvents',[])))
   }
 
   private handleError<T> ( operation ="operation",result?:T){
     return (error:any): Observable<T> => {
-     console.error(error);
+     console.error(operation);
+     console.error( error);
      return of(result as T);
     }
   }
