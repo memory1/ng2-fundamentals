@@ -9,7 +9,6 @@ export class EventListResolver implements Resolve<any> {
   }
 
   resolve() {
-    console.log("resolver");
     return this.eventService.getEvents()
   }
 }
