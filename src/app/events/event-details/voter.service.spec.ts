@@ -18,6 +18,7 @@ describe('VoterService',()=>{
             mockHttp.delete.and.returnValue(of(false));
             voterService.deleteVoter(3,<ISession>session,"joe");
             expect(session.voters.length).toBe(1);
+            expect(session.voters[0]).toBe("joe");
         })
     })
 })
