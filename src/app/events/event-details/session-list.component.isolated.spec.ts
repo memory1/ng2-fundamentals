@@ -19,7 +19,7 @@ describe('SessionListComponent', () => {
       component.sortBy = 'name';
       component.eventId = 3;
 
-      component.ngOnChanges('');
+      component.ngOnChanges();
 
       expect(component.visibleSessions.length).toBe(2);
     })
@@ -32,7 +32,7 @@ describe('SessionListComponent', () => {
       component.sortBy = 'name';
       component.eventId = 3;
 
-      component.ngOnChanges('all');
+      component.ngOnChanges();
 
       expect(component.visibleSessions[2].name).toBe('session 3');
     })
