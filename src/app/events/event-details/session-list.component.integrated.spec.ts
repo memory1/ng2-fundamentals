@@ -27,7 +27,7 @@ describe('SesisonListComponent', () => {
       imports: [],
       declarations: [
         SessionListComponent,
-        DurationPipe,
+       // DurationPipe,
       ],
       providers: [
         { provide: AuthService, useValue: mockAuthService },
